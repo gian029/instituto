@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Gianfranco</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<main class="contenedor">
+
+  <!-- CABECERA -->
+  <header class="cabecera">
+    <img src="img/logo.jpg" alt="Logo Instituto Gianfranco" class="logo">
+    <h1 class="nombre-empresa">Instituto Gianfranco</h1>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#inscripcion">Inscripción</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- SLIDER -->
+  <section class="slider">
+    <div class="slides">
+      <img src="img/instalaciones.jpg" alt="Instalaciones Instituto Gianfranco">
+      <img src="img/clases.jpg" alt="Clases en el Instituto">
+      <img src="img/graduacion.jpg" alt="Graduación Instituto Gianfranco">
+    </div>
+    <div class="paginacion">
+      <span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE CURSOS -->
+  <section id="cursos" class="cursos">
+    <h2>Cursos Disponibles</h2>
+    <div class="cursos-lista">
+      <div class="curso-item">
+        <img src="img/programacion.jpeg" alt="Curso de Programación">
+        <h3>Curso de Programación</h3>
+        <p>Aprende las bases de la programación con tecnologías modernas.</p>
+      </div>
+      <div class="curso-item">
+        <img src="img/diseno_grafico.jpg" alt="Curso de Diseño Gráfico">
+        <h3>Curso de Diseño Gráfico</h3>
+        <p>Domina herramientas de diseño como Photoshop, Illustrator y más.</p>
+      </div>
+      <div class="curso-item">
+        <img src="img/marketing.jpg" alt="Curso de Marketing Digital">
+        <h3>Curso de Marketing Digital</h3>
+        <p>Conoce las estrategias de marketing digital más efectivas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE VIDEO -->
+  <section id="video" class="video">
+    <h2>Bienvenidos al Instituto Gianfranco</h2>
+    <!-- Video de YouTube -->
+    <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=klQHv2rWUXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <!-- FORMULARIO DE INSCRIPCIÓN -->
+  <section id="inscripcion" class="inscripcion">
+    <h2>Formulario de Inscripción</h2>
+    <form id="formInscripcion">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="correo" placeholder="Tu Correo" required>
+      <select name="curso" required>
+        <option value="">Selecciona un Curso</option>
+        <option value="programacion">Curso de Programación</option>
+        <option value="diseno">Curso de Diseño Gráfico</option>
+        <option value="marketing">Curso de Marketing Digital</option>
+      </select>
+      <button type="submit">Inscribirse</button>
+    </form>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o quieres más información sobre nuestros cursos?</p>
+    <form id="formContacto">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="correo" placeholder="Tu Correo" required>
+      <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+      <button type="submit">Enviar Consulta</button>
+    </form>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="sociales">
+      <a href="https://facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com" target="_blank"><img src="icons/twitter.jpg" alt="Twitter"></a>
+    </div>
+    <p>&copy; 2025 Instituto Gianfranco | <a href="mailto:contacto@institutogianfranco.com">contacto@institutogianfranco.com</a></p>
+  </footer>
+
+</main>
+
+</body>
+</html>
